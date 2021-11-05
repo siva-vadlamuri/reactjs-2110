@@ -7,6 +7,7 @@ import Product from "./Components/Products/Product";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import UserData from "./UserData/UserData";
+import Pagination from "./Components/Pagination/Pagination";
 
 // const myName = "shiva";
 // We need to pass the data from one component another component
@@ -52,11 +53,11 @@ function App() {
       {/* Banner Image */}
       <Header />
 
-      <div>
+      {/* <div>
         <p className="error">An Error Occured</p>
-      </div>
+      </div> */}
 
-      <section className="border border-primary m-3 p-3">
+      {/* <section className="border border-primary m-3 p-3"> */}
         {/* <Product
           name="Iphone 12 pro"
           desc="Iphone 12 pro is build with m13 ionic chip"
@@ -83,8 +84,9 @@ function App() {
              )) 
           } */}
 
-      </section>
-      <UserData/>
+      {/* </section> */}
+      {/* <UserData/> */}
+      <Pagination/>
     </div>
   );
 }

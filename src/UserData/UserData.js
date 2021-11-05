@@ -15,8 +15,9 @@ class UserData extends Component {
     getUserData = async() =>{
       const response = await fetch('https://jsonplaceholder.typicode.com/users');
       const data = await response.json();
-    //   console.log(data);  
-    return data;
+    //   console.log(data); 
+    this.setState({userData:data}); 
+    // return data;
     
     }
     componentDidMount(){
